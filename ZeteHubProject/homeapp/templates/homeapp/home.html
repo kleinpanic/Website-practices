@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        /* Simple styling for header and profile icon */
+        .header {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: right;
+        }
+
+        .profile-icon {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            line-height: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .profile-icon:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header with profile icon -->
+    <div class="header">
+        <a href="{% url 'profile' %}">
+            <div class="profile-icon">
+                P <!-- Placeholder for Profile icon, can be user initials or an image later -->
+            </div>
+        </a>
+    </div>
+
+    <h1>Welcome to the Home Page</h1>
+
+</body>
+</html>
