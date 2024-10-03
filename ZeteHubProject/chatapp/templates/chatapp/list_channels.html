@@ -1,0 +1,14 @@
+<h2>Available Chatrooms</h2>
+<ul>
+  {% for channel in channels %}
+    <li>
+      <a href="{% url 'chatroom' channel.name %}">
+        {{ channel.name }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+
+{% if user.is_staff %}
+  <a href="{% url 'create_channel' %}">Create New Channel</a>
+{% endif %}
